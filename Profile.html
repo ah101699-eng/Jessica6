@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>霓霓的個人檔案 - 浪愛延續</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #fff5f5; /* 極淺粉色底 */
+            font-family: 'Segoe UI', Microsoft JhengHei, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .profile-container {
+            background: white;
+            width: 90%;
+            max-width: 600px;
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border: 5px solid #fce4ec;
+        }
+
+        .cat-image {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        .info-section {
+            padding: 30px;
+            color: #5d4037;
+        }
+
+        .info-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px dashed #f8bbd0;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        .tag {
+            background: #f8bbd0;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .donation-title {
+            margin-top: 30px;
+            font-weight: bold;
+            color: #d81b60;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .donate-btn {
+            flex: 1;
+            padding: 12px;
+            border: 2px solid #f8bbd0;
+            background: white;
+            border-radius: 10px;
+            color: #d81b60;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .donate-btn:hover {
+            background: #f8bbd0;
+            color: white;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #ad1457;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="profile-container">
+    <img src="https://images.unsplash.com/photo-1519052537078-e6302a4968d4?auto=format&fit=crop&w=800&q=80" alt="霓霓" class="cat-image">
+    
+    <div class="info-section">
+        <div class="info-header">
+            <h2 style="margin:0;">名字：霓霓</h2>
+            <span class="tag">待幫助</span>
+        </div>
+
+        <p><strong>年齡：</strong> 2 歲</p>
+        <p><strong>性別：</strong> 女孩</p>
+        <p><strong>目前所在地：</strong> 台北市大安區浪浪中繼站</p>
+        <p><strong>生活近況：</strong> 霓霓最近很愛曬太陽，食慾不錯，但我們需要更多的乾糧儲備來度過寒冬。</p>
+
+        <p class="donation-title">❤ 捐贈飼料基金</p>
+        <div class="button-group">
+            <button class="donate-btn" onclick="alert('感謝您捐贈 $100 給霓霓！')">NT$ 100</button>
+            <button class="donate-btn" onclick="alert('感謝您捐贈 $200 給霓霓！')">NT$ 200</button>
+            <button class="donate-btn" onclick="alert('感謝您捐贈 $500 給霓霓！')">NT$ 500</button>
+        </div>
+
+        <a href="index.html" class="back-link">← 返回首頁</a>
+    </div>
+</div>
+
+</body>
+</html>
